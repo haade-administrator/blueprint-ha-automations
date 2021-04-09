@@ -11,6 +11,13 @@ blueprint:
       selector:
         entity:
           domain: binary_sensor
+          device_class: window
+    door_entity:
+      name: Door Sensor
+      description: The door sensor that controls the climate entity.
+      selector:
+        entity:
+          domain: binary_sensor
           device_class: door
     minimum_open_time:
       name: Miniumum time the window is open
