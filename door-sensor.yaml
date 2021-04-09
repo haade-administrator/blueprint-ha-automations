@@ -13,7 +13,35 @@ blueprint:
           domain: binary_sensor
           device_class: window
     door_entity:
-      name: Door Sensor
+      name: Door Sensor 1
+      description: The door sensor that controls the climate entity.
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: door
+    door_entity:
+      name: Door Sensor 2
+      description: The door sensor that controls the climate entity.
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: door
+    door_entity:
+      name: Door Sensor 3
+      description: The door sensor that controls the climate entity.
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: door
+    door_entity:
+      name: Door Sensor 4
+      description: The door sensor that controls the climate entity.
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: door
+    door_entity:
+      name: Door Sensor 5
       description: The door sensor that controls the climate entity.
       selector:
         entity:
@@ -25,35 +53,7 @@ blueprint:
       selector:
         entity:
           domain: binary_sensor
-          device_class: door-1
-    door_entity:
-      name: Door Sensor
-      description: The door sensor that controls the climate entity.
-      selector:
-        entity:
-          domain: binary_sensor
-          device_class: door-2
-    door_entity:
-      name: Door Sensor
-      description: The door sensor that controls the climate entity.
-      selector:
-        entity:
-          domain: binary_sensor
-          device_class: door-3
-    door_entity:
-      name: Door Sensor
-      description: The door sensor that controls the climate entity.
-      selector:
-        entity:
-          domain: binary_sensor
-          device_class: door-4
-    door_entity:
-      name: Door Sensor
-      description: The door sensor that controls the climate entity.
-      selector:
-        entity:
-          domain: binary_sensor
-          device_class: door-5
+          device_class: door
     minimum_open_time:
       name: Miniumum time the window is open
       description: Time in seconds to wait until the automation is triggered
