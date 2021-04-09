@@ -1,5 +1,5 @@
 blueprint:
-  name: Window open, climate off after a defined time
+  name: Window-Door open, climate off after a defined time
   description: An automation that turns off a running your climate device for exmple a heater
     or an air conditioning if a window sensor is open for a specific time. It waits
     until the window is closed again in order to turn the climate entity on again.
@@ -19,36 +19,31 @@ blueprint:
         entity:
           domain: binary_sensor
           device_class: door
-    door_entity:
       name: Door Sensor 2
       description: The door sensor that controls the climate entity.
       selector:
         entity:
           domain: binary_sensor
           device_class: door
-    door_entity:
       name: Door Sensor 3
       description: The door sensor that controls the climate entity.
       selector:
         entity:
           domain: binary_sensor
           device_class: door
-    door_entity:
       name: Door Sensor 4
       description: The door sensor that controls the climate entity.
       selector:
         entity:
           domain: binary_sensor
           device_class: door
-    door_entity:
       name: Door Sensor 5
       description: The door sensor that controls the climate entity.
       selector:
         entity:
           domain: binary_sensor
           device_class: door
-    door_entity:
-      name: Door Sensor
+      name: Door Sensor 6
       description: The door sensor that controls the climate entity.
       selector:
         entity:
